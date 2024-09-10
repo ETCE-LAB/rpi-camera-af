@@ -43,10 +43,10 @@ Our modular camera system is designed to automate focusing through a manual lens
 
 ### Software Components
 1. **Python Libraries**:
-  1.1. **cv2**: Handles image processing tasks, such as calculating image sharpness.
-  1.2. **PiCamera 2**: Manages camera operations.
-  1.3. **RPi.GPIO**: Controls the GPIO pins that drive the servo motor.
-  1.4. **Threading Module**: Utilizes Python’s threading capabilities to maintain a live view from the camera while adjusting focus in real-time.
+1.1. **cv2**: Handles image processing tasks, such as calculating image sharpness.
+1.2. **PiCamera 2**: Manages camera operations.
+1.3. **RPi.GPIO**: Controls the GPIO pins that drive the servo motor.
+1.4. **Threading Module**: Utilizes Python’s threading capabilities to maintain a live view from the camera while adjusting focus in real-time.
 
 ### System Operation
 The system uses a Python script that integrates and controls these components effectively:
