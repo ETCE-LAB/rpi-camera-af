@@ -76,8 +76,8 @@ This user-driven method allows for selective focusing based on the user's input 
 
 ### 3. Comprehensive Frame Focusing
 We explored two strategies to achieve optimal focus across the entire frame:
-3,1 **Threshold Strategy**: Sets a threshold for the number of attempts the system will make to find the frame with the highest variance—indicative of sharp focus—before stopping and capturing the image.
-3,2 **Rotational Strategy**: Involves rotating the lens in both directions multiple times to determine the optimum lens position, ensuring that the focus is refined by considering multiple positions and selecting the one that consistently provides the best clarity.
+  3.1 **Threshold Strategy**: Sets a threshold for the number of attempts the system will make to find the frame with the highest variance—indicative of sharp focus—before stopping and capturing the image.
+  3.2 **Rotational Strategy**: Involves rotating the lens in both directions multiple times to determine the optimum lens position, ensuring that the focus is refined by considering multiple positions and selecting the one that consistently provides the best clarity.
 
 ### Challenges and Refinements
 One of the main challenges we encountered was the inability to achieve micro-adjustments with the motor and lens system, as the gears and motor setup did not allow for minute, millimeter-level changes. This limitation made it difficult to achieve extremely precise focus, particularly in scenarios requiring a very shallow depth of field or when dealing with micro-scale subjects. However, through iterative testing and refinement, we developed practical algorithms that approximate the best possible focus within the mechanical constraints. Once the optimal focus position is found, the system maintains that position until a significant change in the scene is detected—such as movements or lighting changes—which triggers a re-evaluation of the focus to ensure continuous clarity.
