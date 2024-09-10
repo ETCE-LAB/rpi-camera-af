@@ -4,8 +4,8 @@ Welcome to our repository of 3D CAD files, designed for makers and DIY enthusias
 
 ## What's Included
 
-- **Raspberry Pi Case Parts**: Modular pieces that let you build a sturdy, functional, and aesthetically pleasing case for your Raspberry Pi. The design facilitates easy access to ports and ensures proper ventilation.
-- **Mountable Gears**: A diverse array of gears, including spur, bevel, and worm gears, perfect for your custom mechanical builds.
+1. **Raspberry Pi Case Parts**: Modular pieces that let you build a sturdy, functional, and aesthetically pleasing case for your Raspberry Pi. The design facilitates easy access to ports and ensures proper ventilation.
+2. **Mountable Gears**: A diverse array of gears, including spur, bevel, and worm gears, perfect for your custom mechanical builds.
 
 ## How to Use
 
