@@ -1,7 +1,7 @@
 <img src="https://www.presse.tu-clausthal.de/fileadmin/Presse/images/Corporate_Design/Logo/Logo_TUC_en_CMYK.jpg" width="300">
 
 # RPI-Camera-AF
-## Auto Focus Camera using Raspberry Pi, Lens, and a Servo Motor
+## AutoFocus Camera using Raspberry Pi, Lens, and a Servo Motor
 
 ## Overview
 The RPI-Camera-AF project leverages the versatile Raspberry Pi platform to create a modular camera system capable of automatic focusing. This innovative setup utilizes a combination of a high-quality lens, a precise servo motor, and custom 3D-printed components, orchestrated by the powerful Raspberry Pi 4 to enhance image clarity dynamically.
