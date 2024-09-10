@@ -4,26 +4,32 @@
 ## AutoFocus Camera using Raspberry Pi, Lens, and a Servo Motor
 
 ## Overview
+
 The RPI-Camera-AF project leverages the versatile Raspberry Pi platform to create a modular camera system capable of automatic focusing. This innovative setup utilizes a combination of a high-quality lens, a precise servo motor, and custom 3D-printed components, orchestrated by the powerful Raspberry Pi 4 to enhance image clarity dynamically.
 
 ## Abstract
+
 This project aimed to design and develop a modular camera platform using a Raspberry Pi, integrating various components such as a camera sensor, a wide lens, an FS90R servo motor, and 3D-printed gears. The primary objective was to create an autofocus mechanism that dynamically adjusts focus by calculating the Laplacian variance of live frame previews to achieve optimal sharpness. The methodology involved assembling the hardware components, programming the Raspberry Pi to control the servo motor based on image sharpness metrics, and enabling real-time focus adjustments. Initial tests demonstrated that while the system could effectively identify and adjust to changes in frame sharpness, limitations related to the precision of the lens's focal point, the quality of the sensor, and the accuracy of the servo motor control were identified. These factors affected the overall efficacy of the autofocus system. The project concluded that while the prototype showed potential, enhancements in hardware precision and control algorithms are necessary for practical applications. Future work will focus on refining these elements to improve system reliability and performance.
 
 ## Materials and Methods
+
 In this project, we employed several hardware components and software tools to build our modular camera system. The core of our setup was the **Raspberry Pi 4**, a powerful model with sufficient processing capabilities for image handling and device control. This microcontroller was chosen for its robust support and the ability to interface with various peripherals via its GPIO (General Purpose Input/Output) pins.
 
-### Hardware Components:
+### Hardware Components
+
 1. **Raspberry Pi 4**: Serves as the processing unit and control hub.
 2. **Camera Sensor**: Connects to the Raspberry Pi via the 2-lane MIPI CSI camera port for capturing high-quality images.
 3. **FS90R Servo Motor**: Compact and lightweight, this motor adjusts the camera lens's focus, interfacing with the Raspberry Pi's GPIO pins.
 4. **3D-Printed Gears**: One gear is mounted on the camera lens and the other on the servo motor to mesh perfectly and enable precise focus adjustments.
 
-### Software Tools:
-- **OpenCV (CV2)**: Used for real-time image processing, including calculating the Laplacian variance to determine image sharpness.
-- **PiCamera 2 Library**: Designed for interfacing with the Raspberry Pi's camera module to capture and manipulate images directly.
-- **RPi.GPIO Library**: Manages the GPIO pins for servo motor control, providing necessary instructions based on the image processing results.
+### Software Tools
 
-### Assembly Process:
+1. **OpenCV (CV2)**: Used for real-time image processing, including calculating the Laplacian variance to determine image sharpness.
+2. **PiCamera 2 Library**: Designed for interfacing with the Raspberry Pi's camera module to capture and manipulate images directly.
+3. **RPi.GPIO Library**: Manages the GPIO pins for servo motor control, providing necessary instructions based on the image processing results.
+
+### Assembly Process
+
 The assembly process involved carefully integrating these components. We started by connecting the camera sensor to the Raspberry Pi via the MIPI CSI port and setting up the servo motor via the GPIO pins. Next, the gears were attached—one on the lens and the other on the servo motor. We positioned the motor close enough to the lens so that the gears could engage correctly to transfer motion from the motor to the lens. This setup ensured that when the motor activated, the lens would rotate to adjust focus based on our software analysis. This methodical assembly ensured all parts worked in harmony, allowing for precise control and optimal image clarity.
 
 ## System Design and Implementation
@@ -31,9 +37,9 @@ The assembly process involved carefully integrating these components. We started
 Our modular camera system is designed to automate focusing through a manual lens using a Raspberry Pi 4 as the central controller. It features a well-coordinated assembly of hardware and software components.
 
 ### Hardware Components
-- **Raspberry Pi 4**: Serves as the central processing unit, interfacing with the camera sensor via the 2-lane MIPI CSI camera port for high-quality image capture.
-- **FS90R Servo Motor**: Manages autofocus by adjusting the lens position based on focus requirements, controlled through the Raspberry Pi’s GPIO pins.
-- **3D-Printed Gears**: Engages between the lens and the servo motor, facilitating manual focus adjustments by translating motor movements into direct lens focus adjustments.
+1. **Raspberry Pi 4**: Serves as the central processing unit, interfacing with the camera sensor via the 2-lane MIPI CSI camera port for high-quality image capture.
+2. **FS90R Servo Motor**: Manages autofocus by adjusting the lens position based on focus requirements, controlled through the Raspberry Pi’s GPIO pins.
+3. **3D-Printed Gears**: Engages between the lens and the servo motor, facilitating manual focus adjustments by translating motor movements into direct lens focus adjustments.
 
 ### Software Components
 - **Python Libraries**:
@@ -91,14 +97,14 @@ These methods collectively enhance the usability and functionality of our camera
 
 Before you start the assembly, ensure you have all the necessary tools and components listed.
 
-### Tools Required for Assembly:
+### Tools Required for Assembly
 Before beginning, gather the following tools:
 1. iFixit Micro Screwdriver
 2. Pliers
 3. Wire Cutter/Stripper
 4. Double-Sided Tape
 
-### Hardware Components:
+### Hardware Components
 1. **Raspberry Pi 4**: Serves as the main controller of the camera.
 2. **Micro SD Card (32 GB)**: For Raspberry Pi OS and software.
 3. **3D-Printed Parts**: Listed below with corresponding CAD files.
@@ -114,7 +120,7 @@ Before beginning, gather the following tools:
 8. **Micro HDMI Cable**
 9. **Servo Motor**: Feetech FS90R 360° Continuous Rotation.
 
-### Component Installation Instructions:
+### Component Installation Instructions
 1. Mount the image sensor on the PCB Mount. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Mount%20the%20image%20sensor%20on%20the%20PCB-Mount.jpg) | [CAD file](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/pcb-mount.stl)
 2. Mount the ring gear on the lens using double-sided tape. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Mount%20the%20ring%20gear%20on%20lens%2C%20using%20double%20side%20tape.jpg) | [CAD file](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/Lens-Gear-modul-1.2-30T-30mm-outer-diam-extruded.stl)
 3. Attach the PCB mount to the Raspberry mount. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/attach%20the%20PCB-mount%20to%20the%20Raspberry-mount.jpg) | [CAD file](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/back-frame.stl)
