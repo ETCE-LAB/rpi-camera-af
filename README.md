@@ -55,9 +55,9 @@ The system uses a Python script that integrates and controls these components ef
 3. **Main Function (`moarso()`)**: Orchestrates the autofocus process by comparing sharpness values from consecutive frames and deciding the motor’s direction based on whether image sharpness is improving.
 
 ### Integration and Functionality
-- **Servo Motor and Lens Integration**: The servo motor's integration with the lens via 3D-printed gears is a key aspect of our design, ensuring that each motor adjustment translates directly into lens movement.
-- **Python Script Management**: Handles the complex task of focusing by continuously analyzing image quality and adjusting the lens position to ensure the camera system captures clear images and operates efficiently.
-- **System Flexibility**: Designed to be robust yet adaptable, allowing for real-time adjustments and optimizations based on immediate feedback from the image processing algorithms.
+1. **Servo Motor and Lens Integration**: The servo motor's integration with the lens via 3D-printed gears is a key aspect of our design, ensuring that each motor adjustment translates directly into lens movement.
+2. **Python Script Management**: Handles the complex task of focusing by continuously analyzing image quality and adjusting the lens position to ensure the camera system captures clear images and operates efficiently.
+3. **System Flexibility**: Designed to be robust yet adaptable, allowing for real-time adjustments and optimizations based on immediate feedback from the image processing algorithms.
 
 ### Advanced Focusing Methods
 To enhance the focusing capabilities of our system, we have implemented various innovative methods, each tailored to optimize image clarity under different scenarios. These methods fully leverage the programmable features of the Raspberry Pi and our mechanical setup.
@@ -76,8 +76,8 @@ This user-driven method allows for selective focusing based on the user's input 
 
 ### 3. Comprehensive Frame Focusing
 We explored two strategies to achieve optimal focus across the entire frame:
-  3.1 **Threshold Strategy**: Sets a threshold for the number of attempts the system will make to find the frame with the highest variance—indicative of sharp focus—before stopping and capturing the image.
-  3.2 **Rotational Strategy**: Involves rotating the lens in both directions multiple times to determine the optimum lens position, ensuring that the focus is refined by considering multiple positions and selecting the one that consistently provides the best clarity.
+1. **Threshold Strategy**: Sets a threshold for the number of attempts the system will make to find the frame with the highest variance—indicative of sharp focus—before stopping and capturing the image.
+2. **Rotational Strategy**: Involves rotating the lens in both directions multiple times to determine the optimum lens position, ensuring that the focus is refined by considering multiple positions and selecting the one that consistently provides the best clarity.
 
 ### Challenges and Refinements
 One of the main challenges we encountered was the inability to achieve micro-adjustments with the motor and lens system, as the gears and motor setup did not allow for minute, millimeter-level changes. This limitation made it difficult to achieve extremely precise focus, particularly in scenarios requiring a very shallow depth of field or when dealing with micro-scale subjects. However, through iterative testing and refinement, we developed practical algorithms that approximate the best possible focus within the mechanical constraints. Once the optimal focus position is found, the system maintains that position until a significant change in the scene is detected—such as movements or lighting changes—which triggers a re-evaluation of the focus to ensure continuous clarity.
