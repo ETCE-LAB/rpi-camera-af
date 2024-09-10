@@ -86,13 +86,14 @@ These methods collectively enhance the usability and functionality of our camera
 
 
 
-  -[Complete device setup](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Complete%20device%20setup.jpg)
+  1. [Complete device setup](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Complete%20device%20setup.jpg)
 
-  -[Step by step implementation guide to get the result](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Step%20by%20Step%20to%20implementation.pdf)
+  2. [Step by step implementation guide to get the result](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Step%20by%20Step%20to%20implementation.pdf)
 
-  -[Python script](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Autofocus.py)
+  3. [Python script](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Autofocus.py)
 
-  -[Mountable items - 3D CAD](https://github.com/ETCE-LAB/rpi-camera-af/tree/main/mountable%20items%20-%203D%20CAD)
+  4. [Mountable items - 3D CAD](https://github.com/ETCE-LAB/rpi-camera-af/tree/main/mountable%20items%20-%203D%20CAD)
+     
 ## Assembly Instructions
 
 Before you start the assembly, ensure you have all the necessary tools and components listed.
@@ -108,12 +109,12 @@ Before beginning, gather the following tools:
 1. **Raspberry Pi 4**: Serves as the main controller of the camera.
 2. **Micro SD Card (32 GB)**: For Raspberry Pi OS and software.
 3. **3D-Printed Parts**: Listed below with corresponding CAD files.
-   - [Front Frame](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/back-frame.stl)
-   - [Front Cover](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/Front-Cover-with-servo-mount.stl)
-   - [Back Frame](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/back-frame.stl)
-   - [PCB Mount](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/pcb-mount.stl)
-   - [Servo Gear Module](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/servo-gear-13T-thicker-longer.stl)
-   - [Lens Gear Module](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/Lens-Gear-modul-1.2-30T-30mm-outer-diam-extruded.stl)
+   1. [Front Frame](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/back-frame.stl)
+   2. [Front Cover](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/Front-Cover-with-servo-mount.stl)
+   3. [Back Frame](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/back-frame.stl)
+   4. [PCB Mount](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/pcb-mount.stl)
+   5. [Servo Gear Module](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/servo-gear-13T-thicker-longer.stl)
+   6. [Lens Gear Module](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/Lens-Gear-modul-1.2-30T-30mm-outer-diam-extruded.stl)
 5. **Jumper Cables**: Male to Male and Male to Female.
 6. **Camera Module**: HQ camera v1.0 and Arducam lenses 120 degree with manual focus.
 7. **Power Supply**: 5V, 2.5-3A for Raspberry Pi.
@@ -131,6 +132,6 @@ Before beginning, gather the following tools:
 8. Mount the Servo FS-90R to the front case. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Mount%20the%20Servo-%20fs-90r%20to%20the%20front-case.jpg) | [CAD file](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/Front-Cover-with-servo-mount.stl)
 9. Connect the jumper wire to the desired GPIO pins. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Connect%20the%20jumper%20wire%20to%20the%20desire%20GPIO%20pins.jpg)
 10. Mount the Motor gear. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Mount%20the%20Motor%20gear.jpg) | [CAD file](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/mountable%20items%20-%203D%20CAD/servo-gear-13T-thicker-longer.stl)
-11. Fix the front case lid, and secure with Cable tie-wraps. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Fix%20the%20front%20case%20lid%2C%20and%20tie%20with%20Cable%20tie-wrap.jpg)
+11. Fix the front case lid, and secure it with Cable tie-wraps. [Image](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Fix%20the%20front%20case%20lid%2C%20and%20tie%20with%20Cable%20tie-wrap.jpg)
 
 This comprehensive guide will ensure a smooth assembly process for your modular camera system.
