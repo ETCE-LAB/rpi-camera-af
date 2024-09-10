@@ -42,17 +42,17 @@ Our modular camera system is designed to automate focusing through a manual lens
 3. **3D-Printed Gears**: Engages between the lens and the servo motor, facilitating manual focus adjustments by translating motor movements into direct lens focus adjustments.
 
 ### Software Components
-- **Python Libraries**:
-  - **cv2**: Handles image processing tasks, such as calculating image sharpness.
-  - **PiCamera 2**: Manages camera operations.
-  - **RPi.GPIO**: Controls the GPIO pins that drive the servo motor.
-  - **Threading Module**: Utilizes Python’s threading capabilities to maintain a live view from the camera while adjusting focus in real-time.
+1. **Python Libraries**:
+  1.1. **cv2**: Handles image processing tasks, such as calculating image sharpness.
+  1.2. **PiCamera 2**: Manages camera operations.
+  1.3. **RPi.GPIO**: Controls the GPIO pins that drive the servo motor.
+  1.4. **Threading Module**: Utilizes Python’s threading capabilities to maintain a live view from the camera while adjusting focus in real-time.
 
 ### System Operation
 The system uses a Python script that integrates and controls these components effectively:
-- **FrameVarianceMonitor Class**: Tracks the sharpness of consecutive images, storing variance values to determine when maximum focus is achieved.
-- **Motor Control Functions (`rightmove()`, `leftmove()`)**: Adjust the motor’s direction and focus using `pwm.ChangeDutyCycle` to send signals to the servo.
-- **Main Function (`moarso()`)**: Orchestrates the autofocus process by comparing sharpness values from consecutive frames and deciding the motor’s direction based on whether image sharpness is improving.
+1. **FrameVarianceMonitor Class**: Tracks the sharpness of consecutive images, storing variance values to determine when maximum focus is achieved.
+2. **Motor Control Functions (`rightmove()`, `leftmove()`)**: Adjust the motor’s direction and focus using `pwm.ChangeDutyCycle` to send signals to the servo.
+3. **Main Function (`moarso()`)**: Orchestrates the autofocus process by comparing sharpness values from consecutive frames and deciding the motor’s direction based on whether image sharpness is improving.
 
 ### Integration and Functionality
 - **Servo Motor and Lens Integration**: The servo motor's integration with the lens via 3D-printed gears is a key aspect of our design, ensuring that each motor adjustment translates directly into lens movement.
