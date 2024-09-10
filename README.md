@@ -13,10 +13,10 @@ This project aimed to design and develop a modular camera platform using a Raspb
 In this project, we employed several hardware components and software tools to build our modular camera system. The core of our setup was the **Raspberry Pi 4**, a powerful model with sufficient processing capabilities for image handling and device control. This microcontroller was chosen for its robust support and the ability to interface with various peripherals via its GPIO (General Purpose Input/Output) pins.
 
 ### Hardware Components:
-- **Raspberry Pi 4**: Serves as the processing unit and control hub.
-- **Camera Sensor**: Connects to the Raspberry Pi via the 2-lane MIPI CSI camera port for capturing high-quality images.
-- **FS90R Servo Motor**: Compact and lightweight, this motor adjusts the camera lens's focus, interfacing with the Raspberry Pi's GPIO pins.
-- **3D-Printed Gears**: One gear mounted on the camera lens and the other on the servo motor to mesh perfectly and enable precise focus adjustments.
+1. **Raspberry Pi 4**: Serves as the processing unit and control hub.
+2. **Camera Sensor**: Connects to the Raspberry Pi via the 2-lane MIPI CSI camera port for capturing high-quality images.
+3. **FS90R Servo Motor**: Compact and lightweight, this motor adjusts the camera lens's focus, interfacing with the Raspberry Pi's GPIO pins.
+4. **3D-Printed Gears**: One gear is mounted on the camera lens and the other on the servo motor to mesh perfectly and enable precise focus adjustments.
 
 ### Software Tools:
 - **OpenCV (CV2)**: Used for real-time image processing, including calculating the Laplacian variance to determine image sharpness.
@@ -80,13 +80,13 @@ These methods collectively enhance the usability and functionality of our camera
 
 
 
-[Complete device setup](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Complete%20device%20setup.jpg)
+  -[Complete device setup](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Device%20setup/Complete%20device%20setup.jpg)
 
-[Step by step implementation guide to get the result](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Step%20by%20Step%20to%20implementation.pdf)
+  -[Step by step implementation guide to get the result](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Step%20by%20Step%20to%20implementation.pdf)
 
-[Python script](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Autofocus.py)
+  -[Python script](https://github.com/ETCE-LAB/rpi-camera-af/blob/main/Autofocus.py)
 
-[mountable items - 3D CAD](https://github.com/ETCE-LAB/rpi-camera-af/tree/main/mountable%20items%20-%203D%20CAD)
+  -[Mountable items - 3D CAD](https://github.com/ETCE-LAB/rpi-camera-af/tree/main/mountable%20items%20-%203D%20CAD)
 ## Assembly Instructions
 
 Before you start the assembly, ensure you have all the necessary tools and components listed.
